@@ -1,1 +1,1 @@
-include ':android-mvp'
+include ':android-mvp', ':colorfilter', ':scorling-toolbar-fab-feedback'

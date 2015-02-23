@@ -2,8 +2,6 @@ package org.rocko.demos.mvp.app;
 
 import android.app.Application;
 
-import com.android.volley.toolbox.Volley;
-
 import org.rocko.demos.mvp.util.volley.VolleyRequest;
 
 /**

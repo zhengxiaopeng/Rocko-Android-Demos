@@ -1,5 +1,7 @@
 package org.rocko.demos.mvp.presenter.impl;
 
+import android.os.AsyncTask;
+
 import org.rocko.demos.mvp.model.WeatherModel;
 import org.rocko.demos.mvp.model.entity.Weather;
 import org.rocko.demos.mvp.model.impl.WeatherModelImpl;
@@ -29,6 +31,9 @@ public class WeatherPresenterImpl implements WeatherPresenter, OnWeatherListener
 
     @Override
     public void onSuccess(Weather weather) {
+        AsyncTask asyncTask = null;
+        asyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        ;
         weatherView.hideLoading();
         weatherView.setWeatherInfo(weather);
     }

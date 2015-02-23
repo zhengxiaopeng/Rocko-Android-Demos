@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Rocko-Android-Demos.iml" filepath="$PROJECT_DIR$/Rocko-Android-Demos.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-mvp/android-mvp.iml" filepath="$PROJECT_DIR$/android-mvp/android-mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/colorfilter/colorfilter.iml" filepath="$PROJECT_DIR$/colorfilter/colorfilter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scorling-toolbar-fab-feedback/scorling-toolbar-fab-feedback.iml" filepath="$PROJECT_DIR$/scorling-toolbar-fab-feedback/scorling-toolbar-fab-feedback.iml" />
     </modules>
   </component>
 </project>

@@ -10,6 +10,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android-mvp" />
+            <option value="$PROJECT_DIR$/colorfilter" />
+            <option value="$PROJECT_DIR$/scorling-toolbar-fab-feedback" />
           </set>
         </option>
       </GradleProjectSettings>
