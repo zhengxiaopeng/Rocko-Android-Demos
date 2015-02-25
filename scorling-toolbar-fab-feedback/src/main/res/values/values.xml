@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="spinner">
+        <item>1</item>
+        <item>3</item>
+        <item>43</item>
+
+    </array>
+    <array name="asda">
+        <item>ad</item>
+    </array>
+</resources>
