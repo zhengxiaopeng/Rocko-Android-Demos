@@ -1,1 +1,1 @@
-include ':android-mvp', ':colorfilter', ':scorling-toolbar-fab-feedback'
+include ':android-mvp', ':colorfilter', ':scorling-toolbar-fab-feedback', ':awesome-search-bar-by-vectordrawable', ':effectfactory-usage'

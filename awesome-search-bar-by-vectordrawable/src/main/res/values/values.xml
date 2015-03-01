@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="duration_bar">500</integer>
+    <integer name="duration_search">500</integer>
+    
+    <string name="path_search">M 50,50
+        m -48,0
+        a 48,48 0 1,0 96,0
+        a 48,48 0 1,0 -96,0</string>
+</resources>

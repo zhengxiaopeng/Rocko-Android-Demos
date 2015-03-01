@@ -1,0 +1,118 @@
+<!-- 
+/*
+ *Copyright 2013, Grishma Dixit
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/none"
+        android:title="none"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/autofix"
+        android:title="autofix"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/bw"
+        android:title="bw"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/brightness"
+        android:title="brightness"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/contrast"
+        android:title="contrast"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/crossprocess"
+        android:title="crossprocess"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/documentary"
+        android:title="documentary"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/duotone"
+        android:title="duotone"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/filllight"
+        android:title="filllight"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/fisheye"
+        android:title="fisheye"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/flipvert"
+        android:title="flipvert"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/fliphor"
+        android:title="fliphor"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/grain"
+        android:title="grain"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/grayscale"
+        android:title="grayscale"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/lomoish"
+        android:title="lomoish"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/negative"
+        android:title="negative"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/posterize"
+        android:title="posterize"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/rotate"
+        android:title="rotate"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/saturate"
+        android:title="saturate"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/sepia"
+        android:title="sepia"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/sharpen"
+        android:title="sharpen"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/temperature"
+        android:title="temperature"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/tint"
+        android:title="tint"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/vignette"
+        android:title="vignette"
+        app:showAsAction="never"/>
+
+</menu>

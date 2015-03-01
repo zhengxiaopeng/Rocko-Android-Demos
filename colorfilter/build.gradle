@@ -6,10 +6,13 @@ android {
 
     defaultConfig {
         applicationId "org.rocko.demos.colorfilter"
-        minSdkVersion 14
+        minSdkVersion 8
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+        
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
     }
     buildTypes {
         release {
