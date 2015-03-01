@@ -10,7 +10,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android-mvp" />
-            <option value="$PROJECT_DIR$/awesome-search-bar-by-vectordrawable" />
             <option value="$PROJECT_DIR$/colorfilter" />
             <option value="$PROJECT_DIR$/effectfactory-usage" />
             <option value="$PROJECT_DIR$/scorling-toolbar-fab-feedback" />
