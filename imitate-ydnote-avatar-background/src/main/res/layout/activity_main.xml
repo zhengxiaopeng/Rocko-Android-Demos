@@ -6,10 +6,10 @@
 
     <ImageView
         android:id="@+id/iv"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="200dp"
-        android:scaleType="center"
-        android:src="@drawable/iron_man_02"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher"
         android:text="btn"/>
 
 </RelativeLayout>

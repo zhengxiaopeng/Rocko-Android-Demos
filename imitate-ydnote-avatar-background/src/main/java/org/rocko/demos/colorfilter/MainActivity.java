@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
+import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
@@ -37,26 +38,34 @@ public class MainActivity extends ActionBarActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Drawable drawable = imageView.getDrawable();
-                Bitmap bitmap = drawable2Bitmap(drawable);
-                Long t1 = System.currentTimeMillis();
-                Bitmap bB = blurBitmap(bitmap, 15.1f);
-//                Bitmap bB = fastblur(bitmap, 15);
 
-                Log.i("TAG", "---------->>>>> " + (System.currentTimeMillis() - t1));
-                imageView.setImageBitmap(bB);
-                drawable = imageView.getDrawable();
+                Drawable drawable = getResources().getDrawable(R.drawable.coney);
+                Bitmap srcBitmap = drawable2Bitmap(drawable);
+
                 float[] src = new float[]{
-                        0.393F, 0.769F, 0.189F, 0, 0,
-                        0.349F, 0.686F, 0.168F, 0, 0,
-                        0.272F, 0.534F, 0.131F, 0, 0,
+                        0.3F, 0.6F, 0.40F, 0, 0,
+                        0.3F, 0.6F, 0.40F, 0, 0,
+                        0.3F, 0.6F, 0.40F, 0, 0,
                         0, 0, 0, 1, 0,
                 };
-                ColorMatrix cm = new ColorMatrix();
-                cm.setSaturation(0.0f);
+                ColorMatrix cm = new ColorMatrix(src);
+//                cm.setSaturation(0.3f);
                 ColorMatrixColorFilter f = new ColorMatrixColorFilter(cm);
-                drawable.setColorFilter(f);
-//                drawable.setColorFilter(Color.WHITE, PorterDuff.Mode.SRC);
+//                drawable.setAlpha(135);
+//                drawable.setColorFilter(f);
+
+
+                Bitmap b = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(),
+                        Bitmap.Config.ARGB_8888);
+                Canvas canvas = new Canvas(b);
+                Paint paint = new Paint();
+                paint.setAlpha(100);
+                paint.setColorFilter(f);
+                paint.setAntiAlias(true);
+                canvas.drawBitmap(srcBitmap, 0, 0, paint);
+
+                Bitmap bB = blurBitmap(b, 13.0f);
+                imageView.setImageBitmap(bB);
             }
 
         });
