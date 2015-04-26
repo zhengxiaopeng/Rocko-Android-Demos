@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">touchlistener-subclasses</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text">The ZoomButtonsController handles showing and hiding the zoom controls and positioning it relative to an owner view. It also gives the client access to the zoom controls container, allowing for additional accessory buttons to be shown in the zoom controls window.
+    Typically, clients should call setVisible(true) on a touch down or move (no need to call setVisible(false) since it will time out on its own). Also, whenever the owner cannot be zoomed further, the client should update setZoomInEnabled(boolean) and setZoomOutEnabled(boolean).</string>
+</resources>

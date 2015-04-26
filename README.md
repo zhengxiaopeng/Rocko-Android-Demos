@@ -1,5 +1,5 @@
 #Android demos
-Some of them is [my blog's](http://zhengxiaopeng.com/) demos.
+Some of them are [my blog's](http://zhengxiaopeng.com/) demos. Before run it, check the module whether in the `settings.gradle`.
 
 ##License
 -------

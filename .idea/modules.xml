@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/effectfactory-usage/effectfactory-usage.iml" filepath="$PROJECT_DIR$/effectfactory-usage/effectfactory-usage.iml" />
       <module fileurl="file://$PROJECT_DIR$/imitate-ydnote-avatar-background/imitate-ydnote-avatar-background.iml" filepath="$PROJECT_DIR$/imitate-ydnote-avatar-background/imitate-ydnote-avatar-background.iml" />
       <module fileurl="file://$PROJECT_DIR$/scorling-toolbar-fab-feedback/scorling-toolbar-fab-feedback.iml" filepath="$PROJECT_DIR$/scorling-toolbar-fab-feedback/scorling-toolbar-fab-feedback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/touchlistener-subclasses/touchlistener-subclasses.iml" filepath="$PROJECT_DIR$/touchlistener-subclasses/touchlistener-subclasses.iml" />
     </modules>
   </component>
 </project>

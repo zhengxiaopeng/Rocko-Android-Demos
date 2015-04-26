@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/effectfactory-usage" />
             <option value="$PROJECT_DIR$/imitate-ydnote-avatar-background" />
             <option value="$PROJECT_DIR$/scorling-toolbar-fab-feedback" />
+            <option value="$PROJECT_DIR$/touchlistener-subclasses" />
           </set>
         </option>
       </GradleProjectSettings>
