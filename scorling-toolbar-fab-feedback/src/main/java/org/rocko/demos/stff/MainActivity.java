@@ -9,11 +9,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 import org.rocko.demos.stff.adapter.RecyclerAdapter;
 
@@ -32,6 +35,25 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
+//        SystemBarTintManager tintManager = new SystemBarTintManager(this);
+//        // enable status bar tint
+//        tintManager.setStatusBarTintEnabled(true);
+        // enable navigation bar tint
+
+//        hackStatusBarTransparent();
+    }
+
+    protected void hackStatusBarTransparent()
+    {
+        ViewGroup localViewGroup = (ViewGroup)getWindow().getDecorView().findViewById(android.R.id.statusBarBackground);
+        View localView = new View(this);
+        setStatusViewBackground(localView);
+        localViewGroup.addView(localView, -1, 80);
+    }
+
+    protected void setStatusViewBackground(View paramView)
+    {
+        paramView.setBackgroundColor(Color.RED);
     }
 
     private void init() {

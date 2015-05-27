@@ -5,6 +5,10 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@android:color/holo_red_light</item>
         <item name="colorPrimaryDark">@android:color/holo_red_dark</item>
+
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
     </style>
 
 </resources>

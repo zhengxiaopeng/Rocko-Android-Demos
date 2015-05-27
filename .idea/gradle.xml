@@ -3,14 +3,13 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="D:/Gradle/gradle-2.2.1" />
+        <option name="gradleJvm" value="1.7" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android-mvp" />
-            <option value="$PROJECT_DIR$/colorfilter" />
             <option value="$PROJECT_DIR$/effectfactory-usage" />
             <option value="$PROJECT_DIR$/imitate-ydnote-avatar-background" />
             <option value="$PROJECT_DIR$/scorling-toolbar-fab-feedback" />
@@ -21,4 +20,3 @@
     </option>
   </component>
 </project>
-
