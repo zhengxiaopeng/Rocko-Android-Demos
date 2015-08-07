@@ -1,7 +1,5 @@
 package org.rocko.demos.mvp.presenter.impl;
 
-import android.os.AsyncTask;
-
 import org.rocko.demos.mvp.model.WeatherModel;
 import org.rocko.demos.mvp.model.entity.Weather;
 import org.rocko.demos.mvp.model.impl.WeatherModelImpl;
@@ -14,33 +12,30 @@ import org.rocko.demos.mvp.ui.view.WeatherView;
  * 天气 Prestener实现
  */
 public class WeatherPresenterImpl implements WeatherPresenter, OnWeatherListener {
-    /*Presenter作为中间层，持有View和Model的引用*/
-    private WeatherView weatherView;
-    private WeatherModel weatherModel;
+	/*Presenter作为中间层，持有View和Model的引用*/
+	private WeatherView weatherView;
+	private WeatherModel weatherModel;
 
-    public WeatherPresenterImpl(WeatherView weatherView) {
-        this.weatherView = weatherView;
-        weatherModel = new WeatherModelImpl();
-    }
+	public WeatherPresenterImpl(WeatherView weatherView) {
+		this.weatherView = weatherView;
+		weatherModel = new WeatherModelImpl();
+	}
 
-    @Override
-    public void getWeather(String cityNO) {
-        weatherView.showLoading();
-        weatherModel.loadWeather(cityNO, this);
-    }
+	@Override
+	public void getWeather(String cityNO) {
+		weatherView.showLoading();
+		weatherModel.loadWeather(cityNO, this);
+	}
 
-    @Override
-    public void onSuccess(Weather weather) {
-        AsyncTask asyncTask = null;
-        asyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-        ;
-        weatherView.hideLoading();
-        weatherView.setWeatherInfo(weather);
-    }
+	@Override
+	public void onSuccess(Weather weather) {
+		weatherView.hideLoading();
+		weatherView.setWeatherInfo(weather);
+	}
 
-    @Override
-    public void onError() {
-        weatherView.hideLoading();
-        weatherView.showError();
-    }
+	@Override
+	public void onError() {
+		weatherView.hideLoading();
+		weatherView.showError();
+	}
 }
