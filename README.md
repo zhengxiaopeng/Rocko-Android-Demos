@@ -1,12 +1,12 @@
 #Android demos
 
-基本是[博客](http://zhengxiaopeng.com/)中的 demo，为避免 module 过多拖慢 AS 所以在 `settings.gradle` 中去除了一些 module 的配置，请各取所需注意检查加上！
+基本是[博客](http://rocko.xyz/)中的 demo，为避免 module 过多拖慢 AS 所以在 `settings.gradle` 中去除了一些 module 的配置，请各取所需注意检查加上！
 
 ##License
 -------
 
 ```
-Copyright 2015 Rocko(zhengxiaopeng) <rocko.zxp@gmail.com>.
+Copyright 2015 Rocko(rocko.xyz) <rocko.zxp@gmail.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

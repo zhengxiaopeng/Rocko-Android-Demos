@@ -1,8 +1,10 @@
 apply plugin: 'com.android.application'
 
+def ext = rootProject.ext
+
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion ext.compileSdkVersion
+    buildToolsVersion ext.buildToolsVersion
 
     defaultConfig {
         applicationId "org.rocko.demos.stff"
@@ -21,9 +23,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.1.1'
-    compile 'com.android.support:recyclerview-v7:21.0.0'
-    compile 'com.android.support:cardview-v7:21.0.3'
-    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile ext.support.appcompat_v7
+    compile ext.support.recyclerview_v7
+    compile ext.support.cardview_v7
+    compile ext.ui.systembartint
 
 }

@@ -1,8 +1,10 @@
 apply plugin: 'com.android.application'
 
+def ext = rootProject.ext
+
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion ext.compileSdkVersion
+    buildToolsVersion ext.buildToolsVersion
 
     defaultConfig {
         applicationId "org.rocko.demos.mvp"
@@ -21,7 +23,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.1.0'
-    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
-    compile 'com.squareup.dagger:dagger:1.2.2'
+    compile ext.support.appcompat_v7
+    compile ext.net.volley
+    compile ext.ioc.dagger
 }

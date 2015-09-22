@@ -1,8 +1,10 @@
 apply plugin: 'com.android.application'
 
+def ext = rootProject.ext
+
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion ext.compileSdkVersion
+    buildToolsVersion ext.buildToolsVersion
 
     defaultConfig {
         applicationId "org.rocko.demos.colorfilter"
@@ -24,5 +26,5 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.1.0'
+    compile ext.support.appcompat_v7
 }
