@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/imitate-ydnote-avatar-background" />
             <option value="$PROJECT_DIR$/scorling-toolbar-fab-feedback" />
             <option value="$PROJECT_DIR$/touchlistener-subclasses" />
+            <option value="$PROJECT_DIR$/webview-with-viewpager" />
           </set>
         </option>
       </GradleProjectSettings>

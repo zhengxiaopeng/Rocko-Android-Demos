@@ -1,1 +1,1 @@
-include ':android-mvp', ':scorling-toolbar-fab-feedback', ':effectfactory-usage', ':touchlistener-subclasses', 'imitate-ydnote-avatar-background'
+include ':android-mvp', ':scorling-toolbar-fab-feedback', ':effectfactory-usage', ':touchlistener-subclasses', ':webview-with-viewpager', 'imitate-ydnote-avatar-background'
