@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/root_content_fl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.rocko.wwv.widget.HorizontalSlideWebView
+        android:id="@+id/webview_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:slide_content_height_percent="0.30"
+        app:top_content_height_percent="0.00"/>
+
+</FrameLayout>

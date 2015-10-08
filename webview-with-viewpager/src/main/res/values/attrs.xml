@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- HorizontalSlideWebView -->
+    <declare-styleable name="HorizontalSlideWebView">
+        <attr name="slide_content_height_percent" format="float"/><!-- 滑动区域所占页面大小（百分比） -->
+        <attr name="top_content_height_percent" format="float"/><!-- 滑动区域上部内容所占页面大小（百分比，没有则为 0 -->
+    </declare-styleable>
+</resources>
