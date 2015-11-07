@@ -18,6 +18,7 @@ package com.rocko.wwv.widget;
 import android.content.Context;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 
 /**
@@ -35,16 +36,33 @@ public class WebViewPager extends ViewPager {
 
 	public WebViewPager(Context context, AttributeSet attrs) {
 		super(context, attrs);
+		postDelayed(new Runnable() {
+			@Override
+			public void run() {
+				requestDisallowInterceptTouchEvent(true);
+				getParent().requestDisallowInterceptTouchEvent(true);
+			}
+		}, 3000);
 	}
 
 	@Override
-	protected boolean canScroll(View webView, boolean checkV, int dx, int x, int y) {
-		if (webView instanceof HorizontalSlideWebView) {
-//			Log.d(TAG, "dx: " + dx + " x:" + x + " y:" + y);
-			return webView.canScrollHorizontally(y); // 不再兼容 API < 14
-		} else {
-			return super.canScroll(webView, checkV, dx, x, y);
-		}
+	public boolean onInterceptTouchEvent(MotionEvent ev) {
+		return super.onInterceptTouchEvent(ev);
 	}
 
+		@Override
+		protected boolean canScroll(View webView, boolean checkV, int dx, int x, int y) {
+			if (webView instanceof HorizontalSlideWebView) {
+//			Log.d(TAG, "dx: " + dx + " x:" + x + " y:" + y);
+				return webView.canScrollHorizontally(y); // 不再兼容 API < 14
+			} else {
+				return super.canScroll(webView, checkV, dx, x, y);
+			}
+		}
+
+
+	@Override
+	public boolean dispatchTouchEvent(MotionEvent ev) {
+		return super.dispatchTouchEvent(ev);
+	}
 }

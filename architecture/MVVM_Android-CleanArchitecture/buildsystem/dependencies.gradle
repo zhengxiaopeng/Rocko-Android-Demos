@@ -1,0 +1,76 @@
+allprojects {
+  repositories {
+    jcenter()
+  }
+}
+
+ext {
+  //Android
+  androidBuildToolsVersion = "23.0.1"
+  androidMinSdkVersion = 15
+  androidTargetSdkVersion = 23
+  androidCompileSdkVersion = 23
+
+  //Libraries
+  recyclerViewVersion = '23.0.1'
+  rxJavaVersion = '1.0.14'
+  rxAndroidVersion = '1.0.1'
+  gsonVersion = '2.3'
+  okHttpVersion = '2.5.0'
+  androidAnnotationsVersion = '23.0.1'
+
+  //Testing
+  robolectricVersion = '3.0'
+  jUnitVersion = '4.12'
+  assertJVersion = '1.7.1'
+  mockitoVersion = '1.9.5'
+  dexmakerVersion = '1.0'
+  runnerVersion = "0.4.1"
+  rulesVersion = "0.4.1"
+  espressoVersion = '2.2.1'
+  espressoIntentVersion = '2.2.1'
+
+
+  presentationDependencies = [
+      recyclerView:       "com.android.support:recyclerview-v7:${recyclerViewVersion}",
+      rxJava:             "io.reactivex:rxjava:${rxJavaVersion}",
+      rxAndroid:          "io.reactivex:rxandroid:${rxAndroidVersion}",
+  ]
+
+  presentationTestDependencies = [
+      mockito:            "org.mockito:mockito-core:${mockitoVersion}",
+      dexmaker:           "com.google.dexmaker:dexmaker:${dexmakerVersion}",
+      dexmakerMockito:    "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
+      espresso:           "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+      espressoIntent: "com.android.support.test.espresso:espresso-intents:${espressoIntentVersion}",
+      runner: "com.android.support.test:runner:${runnerVersion}",
+      rules: "com.android.support.test:rules:${rulesVersion}",
+      // Force usage of support annotations in the test app, since it is internally used by the runner module.
+      androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+
+  ]
+
+  domainDependencies = [
+      rxJava:             "io.reactivex:rxjava:${rxJavaVersion}",
+  ]
+
+  domainTestDependencies = [
+      junit:              "junit:junit:${jUnitVersion}",
+      mockito:            "org.mockito:mockito-core:${mockitoVersion}",
+  ]
+
+  dataDependencies = [
+      okHttp:             "com.squareup.okhttp:okhttp:${okHttpVersion}",
+      gson:               "com.google.code.gson:gson:${gsonVersion}",
+      rxJava:             "io.reactivex:rxjava:${rxJavaVersion}",
+      rxAndroid:          "io.reactivex:rxandroid:${rxAndroidVersion}",
+      androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}"
+  ]
+
+  dataTestDependencies = [
+      junit:              "junit:junit:${jUnitVersion}",
+      assertj:            "org.assertj:assertj-core:${assertJVersion}",
+      mockito:            "org.mockito:mockito-core:${mockitoVersion}",
+      robolectric:        "org.robolectric:robolectric:${robolectricVersion}",
+  ]
+}

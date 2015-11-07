@@ -20,6 +20,20 @@ public class WebViewsFragment extends Fragment {
 
 	protected HorizontalSlideWebView mWebView;
 
+	private int index;
+
+	public WebViewsFragment() {
+
+	}
+
+	public WebViewsFragment(int index) {
+		this.index = index;
+	}
+
+	public static WebViewsFragment newInstance(int index) {
+		return new WebViewsFragment(index);
+	}
+
 	@Nullable
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -32,13 +46,38 @@ public class WebViewsFragment extends Fragment {
 
 	private void initWidget(View contentView) {
 		mWebView = (HorizontalSlideWebView) contentView.findViewById(R.id.webview_horizontal);
-		mWebView.setTopContentHeightPercent(0.33f);
-		mWebView.setSlideGalleryHeightPercent(0.33f);
 		setWebViewDefault(mWebView);
+		switch (index) {
+			case 1:
+				mWebView.setTopContentHeightPercent(1f/3);
+				mWebView.setSlideGalleryHeightPercent(1f/3);
+				break;
+			case 2:
+				mWebView.setTopContentHeightPercent(1f/7);
+				mWebView.setSlideGalleryHeightPercent(2.8f/7);
+				break;
+			case 3:
+				mWebView.setTopContentHeightPercent(1f/7);
+				mWebView.setSlideGalleryHeightPercent(2.8f/7);
+				break;
+		}
+
 	}
 
 	private void initData() {
-		mWebView.loadUrl("http://3g.163.com/touch/");
+		String url = "";
+		switch (index) {
+			case 1:
+				url = "http://i.ifeng.com/";
+				break;
+			case 2:
+				url = "http://i.ifeng.com/";
+				break;
+			case 3:
+				url = "http://i.ifeng.com/";
+				break;
+		}
+		mWebView.loadUrl(url);
 	}
 
 	/**

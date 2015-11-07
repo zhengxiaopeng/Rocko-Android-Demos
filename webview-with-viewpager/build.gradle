@@ -24,5 +24,4 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile ext.support.appcompat_v7
-    compile ext.support.design
 }

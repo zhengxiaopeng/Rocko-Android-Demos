@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/architecture/MVVM_Android-CleanArchitecture/MVVM_Android-CleanArchitecture.iml" filepath="$PROJECT_DIR$/architecture/MVVM_Android-CleanArchitecture/MVVM_Android-CleanArchitecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/Rocko-Android-Demos.iml" filepath="$PROJECT_DIR$/Rocko-Android-Demos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android-mvp/android-mvp.iml" filepath="$PROJECT_DIR$/android-mvp/android-mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/architecture/android-mvp/android-mvp.iml" filepath="$PROJECT_DIR$/architecture/android-mvp/android-mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/architecture/architecture.iml" filepath="$PROJECT_DIR$/architecture/architecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/effectfactory-usage/effectfactory-usage.iml" filepath="$PROJECT_DIR$/effectfactory-usage/effectfactory-usage.iml" />
       <module fileurl="file://$PROJECT_DIR$/imitate-ydnote-avatar-background/imitate-ydnote-avatar-background.iml" filepath="$PROJECT_DIR$/imitate-ydnote-avatar-background/imitate-ydnote-avatar-background.iml" />
       <module fileurl="file://$PROJECT_DIR$/scorling-toolbar-fab-feedback/scorling-toolbar-fab-feedback.iml" filepath="$PROJECT_DIR$/scorling-toolbar-fab-feedback/scorling-toolbar-fab-feedback.iml" />

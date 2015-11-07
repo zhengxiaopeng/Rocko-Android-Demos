@@ -16,7 +16,6 @@
 package com.rocko.wwv;
 
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -25,7 +24,6 @@ import com.rocko.wwv.widget.WebViewPager;
 public class MainActivity extends AppCompatActivity {
 
 	private WebViewPager mViewPager;
-	private TabLayout mTabLayout;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +34,9 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	private void initWidget() {
-		mTabLayout = (TabLayout) findViewById(R.id.tabs);
-
 		mViewPager = (WebViewPager) findViewById(R.id.view_pager);
 		MyViewPagerAdapter adapter = new MyViewPagerAdapter(getSupportFragmentManager());
 		mViewPager.setAdapter(adapter);
-		mTabLayout.setupWithViewPager(mViewPager);
 	}
 
 }

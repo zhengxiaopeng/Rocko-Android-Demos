@@ -9,7 +9,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/android-mvp" />
+            <option value="$PROJECT_DIR$/architecture" />
+            <option value="$PROJECT_DIR$/architecture/MVVM_Android-CleanArchitecture" />
+            <option value="$PROJECT_DIR$/architecture/android-mvp" />
             <option value="$PROJECT_DIR$/effectfactory-usage" />
             <option value="$PROJECT_DIR$/imitate-ydnote-avatar-background" />
             <option value="$PROJECT_DIR$/scorling-toolbar-fab-feedback" />

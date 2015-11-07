@@ -18,6 +18,7 @@ package com.rocko.wwv;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.view.View;
 import android.view.ViewGroup;
 
 /**
@@ -39,7 +40,7 @@ public class MyViewPagerAdapter extends FragmentPagerAdapter {
 
 	@Override
 	public Fragment getItem(int position) {
-		return new WebViewsFragment();
+		return WebViewsFragment.newInstance(position + 1);
 	}
 
 	@Override
@@ -49,6 +50,11 @@ public class MyViewPagerAdapter extends FragmentPagerAdapter {
 
 	@Override
 	public void destroyItem(ViewGroup container, int position, Object object) {
+		// Do nothing
+	}
+
+	@Override
+	public void destroyItem(View container, int position, Object object) {
 		// Do nothing
 	}
 }

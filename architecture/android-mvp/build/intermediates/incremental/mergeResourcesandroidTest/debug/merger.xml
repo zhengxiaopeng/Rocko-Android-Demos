@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/ssd/repo/vps/Rocko-Android-Demos/architecture/android-mvp/src/androidTest/res"/><source path="/ssd/repo/vps/Rocko-Android-Demos/architecture/android-mvp/build/generated/res/rs/androidTest/debug"/><source path="/ssd/repo/vps/Rocko-Android-Demos/architecture/android-mvp/build/generated/res/resValues/androidTest/debug"/></dataSet><mergedItems/></merger>
