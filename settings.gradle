@@ -1,5 +1,11 @@
-include ':architecture:android-mvp',':architecture:MVVM_Android-CleanArchitecture',
-        ':scorling-toolbar-fab-feedback',
+// architecture
+include ':architecture:android-mvp',':architecture:MVVM_Android-CleanArchitecture'
+
+//security
+include ':security:java-android-rsa-aes-des'
+
+//
+include ':scorling-toolbar-fab-feedback',
         ':effectfactory-usage',
         ':touchlistener-subclasses',
         ':webview-with-viewpager',

@@ -3,12 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/architecture/MVVM_Android-CleanArchitecture/MVVM_Android-CleanArchitecture.iml" filepath="$PROJECT_DIR$/architecture/MVVM_Android-CleanArchitecture/MVVM_Android-CleanArchitecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/architecture/MVVM_Android-CleanArchitecture/MVVM_Android-CleanArchitecture.iml" filepath="$PROJECT_DIR$/architecture/MVVM_Android-CleanArchitecture/MVVM_Android-CleanArchitecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/Rocko-Android-Demos.iml" filepath="$PROJECT_DIR$/Rocko-Android-Demos.iml" />
       <module fileurl="file://$PROJECT_DIR$/architecture/android-mvp/android-mvp.iml" filepath="$PROJECT_DIR$/architecture/android-mvp/android-mvp.iml" />
       <module fileurl="file://$PROJECT_DIR$/architecture/architecture.iml" filepath="$PROJECT_DIR$/architecture/architecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/effectfactory-usage/effectfactory-usage.iml" filepath="$PROJECT_DIR$/effectfactory-usage/effectfactory-usage.iml" />
       <module fileurl="file://$PROJECT_DIR$/imitate-ydnote-avatar-background/imitate-ydnote-avatar-background.iml" filepath="$PROJECT_DIR$/imitate-ydnote-avatar-background/imitate-ydnote-avatar-background.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/java-android-rsa-aes-des/java-android-rsa-aes-des.iml" filepath="$PROJECT_DIR$/security/java-android-rsa-aes-des/java-android-rsa-aes-des.iml" />
       <module fileurl="file://$PROJECT_DIR$/scorling-toolbar-fab-feedback/scorling-toolbar-fab-feedback.iml" filepath="$PROJECT_DIR$/scorling-toolbar-fab-feedback/scorling-toolbar-fab-feedback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/touchlistener-subclasses/touchlistener-subclasses.iml" filepath="$PROJECT_DIR$/touchlistener-subclasses/touchlistener-subclasses.iml" />
       <module fileurl="file://$PROJECT_DIR$/webview-with-viewpager/webview-with-viewpager.iml" filepath="$PROJECT_DIR$/webview-with-viewpager/webview-with-viewpager.iml" />
     </modules>
